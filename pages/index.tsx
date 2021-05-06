@@ -12,6 +12,7 @@ export const Home = (): JSX.Element => (
       <Link href="/native">native</Link>
       <Link href="/redux">redux</Link>
       <Link href="/recoil">recoil</Link>
+      <Link href="/zustand">zustand</Link>
     </div>
   </div>
 );

@@ -1,6 +1,7 @@
 import { useContext } from 'react';
+import { Todo } from '../interface/todo';
 import { searchContext } from './context/searchContext';
-import useTodos, { Todo } from './hook/useTodo';
+import useTodos from './hook/useTodo';
 import TodoForm from './TodoForm';
 import TodoItem from './TodoItem';
 
