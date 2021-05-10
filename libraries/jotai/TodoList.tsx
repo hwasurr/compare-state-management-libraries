@@ -1,0 +1,32 @@
+import { useAtom } from 'jotai';
+import { filteredTodoAtom } from './atoms/toDoAtom';
+import TodoForm from './TodoForm';
+import TodoItem from './TodoItem';
+
+
+function TodoList(): React.ReactElement {
+  const [todos] = useAtom(filteredTodoAtom);
+
+  // const [todos] = useAtom(fetchAtom)
+
+  return (
+    <div style={{ margin: '0 auto', maxWidth: 960 }}>
+      <h1 style={{ textAlign: 'center' }}>TODO LIST</h1>
+
+      <TodoForm />
+
+      <section
+        style={{
+          border: '1px solid #ddd',
+          padding: 16,
+        }}
+      >
+        {todos.map((todo) => (
+          <TodoItem key={todo.id} todo={todo} />
+        ))}
+      </section>
+    </div>
+  );
+}
+
+export default TodoList;
