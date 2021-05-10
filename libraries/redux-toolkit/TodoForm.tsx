@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { useDispatch } from 'react-redux';
-import { addTodo } from '../redux/reducer/todoReducer';
-import { AppDispatch } from '../redux/store';
+import { addTodo } from './reducer/todoReducer';
+import { AppDispatch } from './store';
 
 function TodoForm(): React.ReactElement {
   const inputref = useRef<HTMLInputElement>();
