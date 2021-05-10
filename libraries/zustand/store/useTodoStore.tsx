@@ -1,6 +1,6 @@
-import create from "zustand";
-import getTodos, { addTodo, removeTodo } from "../../api/todo";
-import { Todo } from "../../interface/todo";
+import create from 'zustand';
+import getTodos, { addTodo, removeTodo } from '../../api/todo';
+import { Todo } from '../../interface/todo';
 
 export type TodoState = {
   todos: Todo[];
@@ -15,7 +15,7 @@ export type TodoState = {
   stats: {
     length: number;
     includeA: Todo[];
-  }
+  };
 };
 
 const useTodoStore = create<TodoState>((set, get) => ({
@@ -23,13 +23,14 @@ const useTodoStore = create<TodoState>((set, get) => ({
   fetchAllTodos: async () => set({ todos: await getTodos() }),
   addTodo: async (todoTitle) => {
     const newTodo = await addTodo(todoTitle);
-    return set(state => ({ todos: [...state.todos, newTodo]}))
+    return set((state) => ({ todos: [...state.todos, newTodo] }));
   },
   removeTodo: async (targetId) => {
     const isRemoveSuccess = await removeTodo(targetId);
-    if (isRemoveSuccess) return set(state => ({
-      todos: state.todos.filter((todo) => todo.id !== targetId)
-    }))
+    if (isRemoveSuccess)
+      return set((state) => ({
+        todos: state.todos.filter((todo) => todo.id !== targetId),
+      }));
   },
   todoSearchText: '',
   changeSearchText: (searchText) => {
@@ -38,14 +39,17 @@ const useTodoStore = create<TodoState>((set, get) => ({
     set({
       stats: {
         length: filtered.length,
-        includeA: filtered.filter((todo) => todo.title.toLowerCase().includes('a')),
-      }
-    })
+        includeA: filtered.filter((todo) =>
+          todo.title.toLowerCase().includes('a')
+        ),
+      },
+    });
     return set({ todoSearchText: searchText });
   },
   stats: {
-    length: 0, includeA: [],
-  }
-}))
+    length: 0,
+    includeA: [],
+  },
+}));
 
-export default useTodoStore
+export default useTodoStore;

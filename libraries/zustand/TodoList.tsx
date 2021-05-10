@@ -8,7 +8,7 @@ function TodoList(): React.ReactElement {
 
   useEffect(() => {
     fetchAllTodos();
-  }, [fetchAllTodos])
+  }, [fetchAllTodos]);
 
   return (
     <div style={{ margin: '0 auto', maxWidth: 960 }}>
@@ -32,4 +32,4 @@ function TodoList(): React.ReactElement {
   );
 }
 
-export default TodoList
+export default TodoList;

@@ -6,7 +6,11 @@ function TodoSearchBox(): React.ReactElement {
   return (
     <div style={{ margin: '16px 0px', textAlign: 'right' }}>
       <label htmlFor="search">SEARCH</label>
-      <input name="search" type="text" onChange={(e) => onSearchTextChange(e.target.value)} />
+      <input
+        name="search"
+        type="text"
+        onChange={(e) => onSearchTextChange(e.target.value)}
+      />
     </div>
   );
 }
