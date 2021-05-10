@@ -1,12 +1,12 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import Layout from '../components/Layout';
-import TodoList from '../libraries/redux/TodoList';
-import todoStore from '../libraries/redux/store';
-import TodoOverview from '../libraries/redux/TodoOverview';
-import TodoSearchBox from '../libraries/redux/TodoSearchBox';
+import TodoList from '../libraries/redux-toolkit/TodoList';
+import todoStore from '../libraries/redux-toolkit/store';
+import TodoOverview from '../libraries/redux-toolkit/TodoOverview';
+import TodoSearchBox from '../libraries/redux-toolkit/TodoSearchBox';
 
-function redux(): React.ReactElement {
+function Redux(): React.ReactElement {
   return (
     <Provider store={todoStore}>
       <Layout>
@@ -20,4 +20,4 @@ function redux(): React.ReactElement {
   );
 }
 
-export default redux;
+export default Redux;

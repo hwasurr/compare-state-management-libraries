@@ -7,15 +7,13 @@ import TodoSearchBox from '../libraries/zustand/TodoSearchBox';
 function zustand(): React.ReactElement {
   return (
     <Layout>
-
       <TodoSearchBox />
-      
+
       <TodoList />
 
       <TodoOverview />
-      
     </Layout>
   );
 }
 
-export default zustand
+export default zustand;

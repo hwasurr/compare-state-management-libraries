@@ -1,4 +1,5 @@
 import React from 'react';
+import { RecoilRoot } from 'recoil';
 import Layout from '../components/Layout';
 import TodoList from '../libraries/recoil/TodoList';
 import TodoOverview from '../libraries/recoil/TodoOverview';
@@ -6,13 +7,15 @@ import TodoSearchBox from '../libraries/recoil/TodoSearchBox';
 
 function Recoil(): React.ReactElement {
   return (
-    <Layout>
-      <TodoSearchBox />
+    <RecoilRoot>
+      <Layout>
+        <TodoSearchBox />
 
-      <TodoList />
+        <TodoList />
 
-      <TodoOverview />
-    </Layout>
+        <TodoOverview />
+      </Layout>
+    </RecoilRoot>
   );
 }
 
