@@ -4,7 +4,7 @@ import Head from 'next/head';
 export const Home = (): JSX.Element => (
   <div className="container">
     <Head>
-      <title>Create Next App</title>
+      <title>Compare State Management Libraries</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
@@ -24,6 +24,7 @@ export const Home = (): JSX.Element => (
       <Link href="/zustand">zustand</Link>
       <Link href="/jotai">jotai</Link>
       <Link href="/valtio">valtio</Link>
+      <Link href="/xstate">xstate</Link>
     </div>
   </div>
 );

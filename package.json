@@ -23,6 +23,7 @@
     "react-redux": "^7.2.4",
     "recoil": "^0.2.0",
     "valtio": "^1.0.4",
+    "xstate": "^4.19.1",
     "zustand": "^3.5.0"
   },
   "devDependencies": {

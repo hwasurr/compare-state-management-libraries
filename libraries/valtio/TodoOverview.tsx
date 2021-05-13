@@ -6,7 +6,7 @@ function TodoOverview(): React.ReactElement {
   const snapshot = useSnapshot(todoProxyState);
 
   const filtered = useMemo(() => snapshot.todos
-  .filter((todo) => todo.title.includes(snapshot.searchValue)), [snapshot.searchValue])
+  .filter((todo) => todo.title.includes(snapshot.searchValue)), [snapshot.todos, snapshot.searchValue])
 
   return (
     <div>
