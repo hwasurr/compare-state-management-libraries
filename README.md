@@ -36,5 +36,7 @@ TODO 리스트
 5. jotai
 6. valtio
 7. xstate (on dev)
-8. react-query (예정)
-9. swr (예정)
+8. react-query + 기본 React (예정)
+9. swr + 기본 React (예정)
+10. apollo-client (예정)
+11. urql-client (예정)
