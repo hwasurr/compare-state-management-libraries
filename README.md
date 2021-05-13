@@ -1,27 +1,40 @@
-# NextJS Typescript Boilerplate
+# 리액트 상태관리 라이브러리 비교
 
-Bootstrap a developer-friendly NextJS app configured with:
-
-- [Typescript](https://www.typescriptlang.org/)
-- Linting with [ESLint](https://eslint.org/)
-- Formatting with [Prettier](https://prettier.io/)
-- Linting, typechecking and formatting on by default using [`husky`](https://github.com/typicode/husky) for commit hooks
-- Testing with [Jest](https://jestjs.io/) and [`react-testing-library`](https://testing-library.com/docs/react-testing-library/intro)
-
-## Deploy your own
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-typescript-eslint-jest&project-name=with-typescript-eslint-jest&repository-name=with-typescript-eslint-jest)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+## 설치
 
 ```bash
-npx create-next-app --example with-typescript-eslint-jest with-typescript-eslint-jest-app
-# or
-yarn create next-app --example with-typescript-eslint-jest with-typescript-eslint-jest-app
+yarn install
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+## 실행
+
+```bash
+yarn dev
+```
+
+## 코드스타일 적용 포맷팅
+
+```bash
+yarn format
+```
+
+## 비교에 사용되는 예시
+
+TODO 리스트
+
+1. TODO 목록
+2. TODO 생성
+3. TODO 개요 (총 개수, "a"가 포함된 TODO 개수)
+4. TODO 검색
+
+## 상태관리 라이브러리
+
+1. 기본 React
+2. redux-toolkit
+3. zustand
+4. recoil
+5. jotai
+6. valtio
+7. xstate (on dev)
+8. react-query (예정)
+9. swr (예정)
