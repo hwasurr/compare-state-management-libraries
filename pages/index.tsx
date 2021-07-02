@@ -25,6 +25,8 @@ export const Home = (): JSX.Element => (
       <Link href="/jotai">jotai</Link>
       <Link href="/valtio">valtio</Link>
       <Link href="/xstate">xstate</Link>
+      <Link href="/reactquery">reactquery</Link>
+      <Link href="/swr">swr</Link>
     </div>
   </div>
 );
